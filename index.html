@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href=
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">
+    <script src="script.js" type="text/javascript" defer></script>
+    <title>My on Line Calculator</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-12">
+          <h1 class="d-flex text-center p-2" id="titre">Ma Calculatrice</h1>  
+        </div>
+    </div>
+    <div class="container justify-center justify-content-between " id="container">
+        <form action="##" class="" id="mf">
+            <div class="d-flex mb-3 ">
+                <label for="nombre1" class="px-1" >NOMBRE1</label>
+                <input type="text" class="text-center" id="nb1" >
+            </div>
+            <div class="d-flex mb-3">
+                <label for="nombre2" class="px-1">NOMBRE2</label>
+                <input type="text" class="text-center" id="nb2">
+            </div>
+            <div class="select mb-5">
+                <select id="operateurs">
+                    <option value="">---selectionnez l'operateur---</option>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="x">X</option>
+                    <option value="/">/</option>
+                </select>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button onclick="bouton()" class=" px-2" id="calcul">
+                    Calculer
+                </button>
+            </div>
+            <h3 id="result"></h3>
+        </form>
+    </div> 
+</body>
+</html>
